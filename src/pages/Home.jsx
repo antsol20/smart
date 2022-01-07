@@ -42,6 +42,9 @@ export default function Home() {
   return (
     <Container component="main" maxWidth="xs">
       <CssBaseline />
+      <h1 style={{ backgroundColor: "white", textAlign: "center" }}>
+          Talant Smart Home
+        </h1>
       <Box
         sx={{
           marginTop: 10,
@@ -51,9 +54,7 @@ export default function Home() {
           gap: "60px",
         }}
       >
-        <h1 style={{ backgroundColor: "white", textAlign: "center" }}>
-          Talant Smart Home
-        </h1>
+        
         <button
           id="thermo"
           className={state.thermo ? "cbutt on" : "cbutt off"}
