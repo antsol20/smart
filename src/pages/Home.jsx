@@ -7,11 +7,7 @@ import { useCookies } from "react-cookie";
 
 export default function Home() {
 
-  const [cookie, setCookie] = useCookies();
-
-  const cookie_data = {
-    session: "5da291a3-c94f-44b9-bdda-4d6f3458c2a6"
-  };
+  const [cookie] = useCookies();
 
   function handleClick(event) {
 
@@ -42,14 +38,6 @@ export default function Home() {
   const [state, Setstate] = useState(sampleState);
 
   useEffect(() => {
-
-    setCookie("talant_smart", cookie_data, {
-      path: "/",
-      maxAge: 31536000,
-      secure: true,
-    });
-  
-
     fetch(config.api)
       .then((response) => response.json())
       .then((data) => Setstate(data));
