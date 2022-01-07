@@ -6,6 +6,9 @@ import { config } from "../constants";
 
 export default function Home() {
   function handleClick(event) {
+
+    event.target.className = "cbutt amber";
+
     const bid = event.target.id;
     const newState = state[bid] === true ? false : true;
 

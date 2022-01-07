@@ -40,13 +40,6 @@ h1 {
 .off {
   background-color: red;
 }
-
-.on:hover {
-  background-color: white;
-  color: black;
-}
-
-.off:hover {
-  background-color: white;
-  color: black;
+.amber {
+  background-color: orange;
 }
