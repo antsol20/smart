@@ -1,19 +1,26 @@
 import React from "react";
 import CssBaseline from "@mui/material/CssBaseline";
-import Typography from "@mui/material/Typography";
-import Container from "@mui/material/Container";
 
+import Container from "@mui/material/Container";
+import Box from "@mui/material/Box";
 
 export default function Home() {
-  
+
   return (
-    <div style={{ backgroundImage: '/images/smart.png'}}>
-    <Container component="main" maxWidth="xs"  >
+
+    <Container component="main" maxWidth="xs" >
       <CssBaseline />
-        <Typography component="h1" variant="h5">
-          Find a Shared Bill
-        </Typography>
+      <Box
+        sx={{
+          marginTop: 8,
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
+        
+        </Box>
     </Container>
-    </div>
-  );
+ 
+);
 }
