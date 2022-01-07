@@ -6,9 +6,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 export default function App() {
   return (
     <CookiesProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/smart">
         <Routes>
-        <Route exact path="smart" component={<Home />} />
+        <Route path="/" component={<Home />} />
         </Routes>
       </BrowserRouter>
       <Home />
