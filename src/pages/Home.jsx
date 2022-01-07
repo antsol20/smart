@@ -4,13 +4,11 @@ import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
 import { config } from "../constants";
 
-
 export default function Home() {
-
   function handleClick(event) {
     const bid = event.target.id;
-    const newState = state[bid] === true ? false: true;
- 
+    const newState = state[bid] === true ? false : true;
+
     const datatosend = {
       id: bid,
       method: newState,
@@ -27,7 +25,7 @@ export default function Home() {
       .then((data) => Setstate(data));
   }
 
-  const sampleState = {thermo: true, plug1: true, plug2: true, plug3: true}
+  const sampleState = { thermo: true, plug1: true, plug2: true, plug3: true };
 
   const [state, Setstate] = useState(sampleState);
 
@@ -55,8 +53,7 @@ export default function Home() {
         </h1>
         <button
           id="thermo"
-          style={{ backgroundColor: state.thermo ? "greenyellow" : "red" }}
-          className="mybutton"
+          className={state.thermo ? "cbutt on" : "cbutt off"}
           onClick={handleClick}
         >
           Cave Floor Heating
@@ -64,8 +61,7 @@ export default function Home() {
 
         <button
           id="plug1"
-          style={{ backgroundColor: state.plug1 ? "greenyellow" : "red" }}
-          className="mybutton"
+          className={state.plug1 ? "cbutt on" : "cbutt off"}
           onClick={handleClick}
         >
           Cave Radiator
@@ -73,8 +69,7 @@ export default function Home() {
 
         <button
           id="plug2"
-          style={{ backgroundColor: state.plug2 ? "greenyellow" : "red" }}
-          className="mybutton"
+          className={state.plug2 ? "cbutt on" : "cbutt off"}
           onClick={handleClick}
         >
           Cave Fan
@@ -82,8 +77,7 @@ export default function Home() {
 
         <button
           id="plug3"
-          style={{ backgroundColor: state.plug3 ? "greenyellow" : "red" }}
-          className="mybutton"
+          className={state.plug3 ? "cbutt on" : "cbutt off"}
           onClick={handleClick}
         >
           Fairy Lights

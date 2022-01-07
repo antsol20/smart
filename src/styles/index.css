@@ -19,16 +19,28 @@ body {
 h1{
   font-family: talantFont;
 }
-.mybutton{
+.cbutt{
   transition-duration: 0.4s;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   width: 100%;
   min-height: 60px;
-  background-color: greenyellow;
-  font-family: talantFont;
+    font-family: talantFont;
   font-size: large;
 }
-.mybutton:hover {
+.on{
+  background-color: greenyellow;
+}
+.off{
+
+  background-color: red;
+}
+
+.on:hover {
+  background-color: white; 
+  color: black;
+}
+
+.off:hover {
   background-color: white; 
   color: black;
 }
