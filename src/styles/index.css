@@ -1,0 +1,9 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.upload-warning{
+  color: grey;
+  font-size: 14px;
+}
+
