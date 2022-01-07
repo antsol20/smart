@@ -2,12 +2,33 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+@font-face {
+  font-family: talantFont;
+  src: url(open-sans.woff);
+}
+
 body { 
   background: url(smart.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  font-family: talantFont;
+  
 }
-
-
+h1{
+  font-family: talantFont;
+}
+.mybutton{
+  transition-duration: 0.4s;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  width: 100%;
+  min-height: 60px;
+  background-color: greenyellow;
+  font-family: talantFont;
+  font-size: large;
+}
+.mybutton:hover {
+  background-color: white; 
+  color: black;
+}
