@@ -33,7 +33,7 @@ export default function Home() {
       .then((data) => Setstate(data));
   }
 
-  const sampleState = { thermo: undefined, plug1: true, plug2: true, plug3: true };
+  const sampleState = { thermo: undefined, plug1: undefined, plug2: undefined, plug3: undefined };
 
   const [state, Setstate] = useState(sampleState);
 
