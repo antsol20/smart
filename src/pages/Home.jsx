@@ -33,7 +33,7 @@ export default function Home() {
       .then((data) => Setstate(data));
   }
 
-  const sampleState = { thermo: true, plug1: true, plug2: true, plug3: true };
+  const sampleState = { thermo: undefined, plug1: true, plug2: true, plug3: true };
 
   const [state, Setstate] = useState(sampleState);
 
@@ -62,7 +62,7 @@ export default function Home() {
         
         <button
           id="thermo"
-          className={state.thermo ? "cbutt on" : "cbutt off"}
+          className={state.thermo ? "cbutt on" : state.thermo === undefined ? "cbutt pending" : "cbutt off" }
           onClick={handleClick}
         >
           Cave Floor Heating
@@ -70,7 +70,7 @@ export default function Home() {
 
         <button
           id="plug1"
-          className={state.plug1 ? "cbutt on" : "cbutt off"}
+          className={state.plug1 ? "cbutt on" : state.plug1 === undefined ? "cbutt pending" : "cbutt off" }
           onClick={handleClick}
         >
           Cave Radiator
@@ -78,7 +78,7 @@ export default function Home() {
 
         <button
           id="plug2"
-          className={state.plug2 ? "cbutt on" : "cbutt off"}
+          className={state.plug2 ? "cbutt on" : state.plug2 === undefined ? "cbutt pending" : "cbutt off" }
           onClick={handleClick}
         >
           Cave Fan
@@ -86,7 +86,7 @@ export default function Home() {
 
         <button
           id="plug3"
-          className={state.plug3 ? "cbutt on" : "cbutt off"}
+          className={state.plug3 ? "cbutt on" : state.plug3 === undefined ? "cbutt pending" : "cbutt off" }
           onClick={handleClick}
         >
           Fairy Lights

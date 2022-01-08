@@ -40,6 +40,9 @@ h1 {
 .off {
   background-color: red;
 }
+.pending {
+  background-color: grey;
+}
 .amber {
   background-color: orange;
 }
