@@ -91,6 +91,14 @@ export default function Home() {
         >
           Fairy Lights
         </button>
+
+        <button
+          id="plug4"
+          className={state.plug4 ? "cbutt on" : state.plug4 === undefined ? "cbutt pending" : "cbutt off" }
+          onClick={handleClick}
+        >
+          Fish Tank
+        </button>
       </Box>
     </Container>
   );
